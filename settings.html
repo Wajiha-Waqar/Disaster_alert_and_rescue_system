@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alerts - Disaster Alert System</title>
-    <link rel="stylesheet" href="alertsStyle.css">
+    <title>Settings - Disaster Alert System</title>
+    <link rel="stylesheet" href="settingsStyle.css">
 </head>
 
 <body>
@@ -17,19 +17,158 @@
 
         <ul class="nav-links">
             <li><a href="index.html"><img height="20" src="images/home.png" alt="home icon">Home</a></li>
-            <li><a href="dashboard.html"><img height="20" src="images/dashboard.png" alt="dashboard icon">Dashboard</a></li>
+            <li><a href="dashboard.html"><img height="20" src="images/dashboard.png" alt="dashboard icon">Dashboard</a>
+            </li>
             <li><a href="alerts.html"><img height="20" src="images/alerts.png" alt="alerts icon">Alerts</a></li>
             <li><a href="map.html"><img height="20" src="images/map.png" alt="map icon">Live Map</a></li>
-            <li><a href="analytics.html"><img height="20" src="images/analytics.png" alt="analytics icon">Analytics</a></li>
-            
+            <li><a href="analytics.html"><img height="20" src="images/analytics.png" alt="analytics icon">Analytics</a>
+            </li>
+
         </ul>
-        <span>
-            <h4>
-                System Active
-            </h4>
-            <p>All monitoring systems operational</p>
-        </span>
+
     </nav>
+    <main>
+        <div>
+            <span>
+                <h4>
+                    Settings
+                </h4>
+                <p>Manage your notification preferences and account settings</p>
+            </span>
+        </div>
+        <div class="alerts-subscriptions">
+            <span>
+                <h3>
+                        Alert Subscriptions
+                    </h3>
+                    <p>
+                        Select which disaster types to monitor
+                    </p>
+            </span>
+
+
+            <label class="switch">
+                <span class="slider">
+                    <h4>
+                        Earthquake Alerts
+                    </h4>
+                    <p>
+                        Receive notifications for seismic activity
+                    </p>
+                </span>
+                <input type="checkbox" id="emailToggle">
+            </label>
+            <label class="switch">
+                <span class="slider">
+                    <h4>
+                        Flood Alerts
+                    </h4>
+                    <p>
+                        Get updates on flooding and water levels
+                    </p>
+                </span>
+                <input type="checkbox" id="emailToggle">
+            </label>
+            <label class="switch">
+                <span class="slider">
+                    <h4>
+                        Wildfire Alerts
+                    </h4>
+                    <p>
+                        Monitor fire risks and active wildfires
+                    </p>
+                </span>
+                <input type="checkbox" id="emailToggle">
+            </label>
+            <label class="switch">
+                <span class="slider">
+                    <h4>
+                        Cyclone/Hurricane Alerts
+                    </h4>
+                    <p>
+                        Track tropical storms and cyclones in real-time
+                    </p>
+                </span>
+                <input type="checkbox" id="emailToggle">
+            </label>
+        </div>
+
+        <div class="email-notifications">
+             <span>
+                <h3>
+                        Notification Preferences
+                    </h3>
+                    <p>
+                        Choose how you want to receive alerts
+                    </p>
+        
+
+            <label class="switch">
+                <span class="slider">
+                    <h4>
+                        Email Notifications
+                    </h4>
+                    <p>
+                        Receive disaster alerts via email
+                    </p>
+                </span>
+                <input type="checkbox" id="emailToggle">
+            </label>
+            <label class="switch">
+                <span class="slider">
+                    <h4>
+                        SMS Notifications
+                    </h4>
+                    <p>
+                        Get instant text messages for critical alerts
+                    </p>
+                </span>
+                <input type="checkbox" id="smsToggle">
+            </label>
+            <label class="switch">
+                <span class="slider">
+                    <h4>
+                        In-App Notifications
+                    </h4>
+                    <p>
+                        TShow notifications within the application
+                    </p>
+                </span>
+                <input type="checkbox" id="inAppToggle">
+            </label>
+        </div>
+        <div>
+            <div>
+                <h3>
+                    Appearance
+                </h3>
+                <p>
+                    Customize your interface theme
+                </p>
+            </div>
+            <div>
+                <span>
+                    <img src="images/light_mode.png" alt="Light Mode">
+                    <h4>
+                        Light Mode
+                    </h4>
+                    <p>
+                        Bright and clear interface for daytime use
+                    </p>
+                </span>
+                <span>
+                    <img src="images/dark_mode.png" alt="Dark Mode">
+                    <h4>
+                        Dark Mode
+                    </h4>
+                    <p>
+                        Easy on the eyes for low-light environments
+                    </p>
+                </span>
+            </div>
+        </div>
+        
+    </main>
 </body>
 
 </html>
