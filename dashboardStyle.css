@@ -19,3 +19,14 @@ div > img {
     display: flex;
     gap: 20px;
 }
+.info > span {
+    display: flex;
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    justify-content: center;
+    justify-items: center;
+    font-weight: bold;
+}
