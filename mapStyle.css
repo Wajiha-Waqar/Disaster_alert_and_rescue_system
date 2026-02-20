@@ -1,21 +1,142 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} 
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-div > img {
-    width: 50px;
-    height: 50px;
+body{
+  background:#f4f6f8;
 }
-.navBar {
-    display: flex;
-    justify-content: flex-end;
-    background-color: #4CAF50;
-    padding: 10px;
+
+/* NAVBAR */
+
+.navBar{
+  height:70px;
+  background:#1f9d55;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 30px;
 }
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+
+.nav-left{
+  display:flex;
+  align-items:center;
+  gap:10px;
 }
+
+.logo{
+  width:40px;
+  height:40px;
+}
+
+.brand{
+  font-size:18px;
+  font-weight:bold;
+}
+
+.nav-links{
+  list-style:none;
+  display:flex;
+  gap:25px;
+}
+
+.nav-links a{
+  color:white;
+  text-decoration:none;
+  font-size:14px;
+}
+
+.system-status{
+  text-align:right;
+  font-size:12px;
+  opacity:0.9;
+}
+
+/* MAIN */
+
+.main{
+  height:calc(100vh - 70px);
+  display:flex;
+  flex-direction:column;
+}
+
+/* HEADER */
+
+.header{
+  background:white;
+  padding:20px 30px;
+  border-bottom:1px solid #e0e0e0;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.header h1{
+  font-size:22px;
+}
+
+.header p{
+  font-size:14px;
+  color:gray;
+}
+
+.filters button{
+  padding:8px 16px;
+  border-radius:20px;
+  border:1px solid #ddd;
+  background:white;
+  cursor:pointer;
+  margin-left:8px;
+}
+
+.filters button.active{
+  background:#1f9d55;
+  color:white;
+  border:none;
+}
+
+/* MAP */
+
+.map-section{
+  flex:1;
+  position:relative;
+}
+
+.map-section iframe{
+  width:100%;
+  height:100%;
+  border:none;
+}
+
+/* LEGEND */
+
+.legend{
+  position:absolute;
+  bottom:30px;
+  left:30px;
+  background:white;
+  padding:15px;
+  border-radius:12px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.1);
+  font-size:14px;
+}
+
+.legend div{
+  margin-top:8px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.dot{
+  width:12px;
+  height:12px;
+  border-radius:50%;
+}
+
+.green{ background:#22c55e; }
+.yellow{ background:#facc15; }
+.red{ background:#ef4444; }
