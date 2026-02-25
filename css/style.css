@@ -22,10 +22,16 @@ body {
 
 
 .logo {
-    height: 45px;
+    display: flex;
     margin-right: 10px;
+    align-items: center;
 }
 
+
+.logo > img {
+    width: 100px;
+    height: 100px;
+}
 .nav-links {
     display: flex;
     list-style: none;
@@ -74,7 +80,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 25px;
-    margin:25px 0 60px 0;x;
+    margin:25px 0 60px 0;
     flex-wrap: wrap;
 }
 
