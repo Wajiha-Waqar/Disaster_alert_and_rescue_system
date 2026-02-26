@@ -1,38 +1,158 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} 
-
-div > img {
-    width: 50px;
-    height: 50px;
+    font-family: "Segoe UI", sans-serif;
 }
+
+body {
+    background: #f0fdf4;
+    color: #14532d;
+}
+
 .navBar {
     display: flex;
-    justify-content: flex-end;
-    background-color: #4CAF50;
-    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #22c55e;
+    color: white;
 }
+
+.navBar div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    height: 40px;
+}
+
+.navBar span {
+    font-size: 22px;
+    font-weight: bold;
+}
+
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 25px;
 }
-.alerts-subscriptions {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-}
-.email-notifications {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
 
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 15px;
+    transition: 0.3s;
 }
-span > img {
-    width: 50px;
-    height: 50px;
+
+.nav-links li a:hover {
+    color: #bbf7d0;
+}
+
+main {
+    padding: 30px 50px;
+}
+main h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+main h4 {
+    font-size: 19px;
+    margin-bottom: 3px;
+}
+
+main p {
+    font-size: 13px;
+    color: #4b5563;
+}
+.alerts-subscriptions,
+.email-notifications,
+main > div:last-child {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    margin-top: 25px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.05);
+    border: 1px solid #22c55e; 
+}
+
+.switch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 18px;
+    border: 1px solid #22c55e;
+    border-radius: 12px;
+    margin-top: 14px;
+    cursor: pointer;
+    transition: 0.25s;
+    background: #f0fdf4; 
+}
+
+.switch:hover {
+    background: #dcfce7;
+    transform: translateY(-2px);
+}
+
+.switch .slider {
+    max-width: 80%;
+}
+
+.switch h4 {
+    color: #16a34a;
+    margin-bottom: 4px;
+    font-size: 16px;
+}
+
+.switch p {
+    color: #166534;
+    font-size: 13px;
+}
+
+.switch input[type="checkbox"],
+.switch input[type="radio"] {
+    width: 46px;
+    height: 24px;
+    appearance: none;
+    background: #d1d5db;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.switch input::before {
+    content: "";
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    background: white;
+    border-radius: 50%;
+    top: 2.5px;
+    left: 3px;
+    transition: 0.3s;
+}
+
+.switch input:checked {
+    background: #22c55e;
+}
+
+.switch input:checked::before {
+    transform: translateX(22px);
+}
+
+
+.switch img {
+    height: 28px;
+    margin-bottom: 4px;
+}
+
+main > div:first-child {
+    margin-top: 10px; 
 }
